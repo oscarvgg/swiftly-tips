@@ -1,9 +1,8 @@
 ---
-title: #1 Closure retain cycle
+title: 1 - Closure retain cycle
 date: 2017-11-30 20:07:08
 tags: memory
 ---
-
 Avoid calling `self` inside your closure as much as possible.
 
 ```swift
