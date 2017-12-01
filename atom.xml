@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Swiftly tips</title>
+  
+  <subtitle>Tips to improve your Swift knowledge</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://swiftly.tips/"/>
+  <updated>2017-11-30T19:54:14.078Z</updated>
+  <id>http://swiftly.tips/</id>
+  
+  <author>
+    <name>Oscar V. Gonzalez Greco</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://swiftly.tips/2017/11/30/1-closure-retain-cycle/"/>
+    <id>http://swiftly.tips/2017/11/30/1-closure-retain-cycle/</id>
+    <published>2017-11-30T19:07:08.000Z</published>
+    <updated>2017-11-30T19:54:14.078Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Avoid calling &lt;code&gt;self&lt;/code&gt; inside your closure as much as possible.&lt;/p&gt;
+&lt;figure class=&quot;highlight swift&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+    
+      <category term="memory" scheme="http://swiftly.tips/tags/memory/"/>
+    
+  </entry>
+  
+</feed>
