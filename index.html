@@ -201,7 +201,7 @@ ga('send', 'pageview');
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2017/11/30/1-closure-retain-cycle/">1 Closure retain cycle</a>
+            <a class="article-title" href="/2017/11/30/1-closure-retain-cycle/">1 - Closure retain cycle</a>
         </h1>
     
 
@@ -231,7 +231,7 @@ ga('send', 'pageview');
         <div class="article-entry" itemprop="articleBody">
         
             
-            <h1 id="1-Closure-retain-cycle"><a href="#1-Closure-retain-cycle" class="headerlink" title="#1 Closure retain cycle"></a>#1 Closure retain cycle</h1><p>Avoid calling <code>self</code> inside your closure as much as possible.</p>
+            <p>Avoid calling <code>self</code> inside your closure as much as possible.</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> tower = &#123; [<span class="keyword">weak</span> <span class="keyword">self</span>] rapunzel <span class="keyword">in</span></div><div class="line">  <span class="keyword">return</span> <span class="keyword">self</span>?.knight.save(rapunzel)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>What if <code>self</code> is <code>nil</code>? I know what you’re thinking. Forget <code>unowned</code>! Just pass a capture list with the properties you need inside the closure.</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> tower = &#123; [knight] rapunzel <span class="keyword">in</span></div><div class="line">  <span class="keyword">return</span> knight.save(rapunzel)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
@@ -246,7 +246,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://swiftly.tips/2017/11/30/1-closure-retain-cycle/" data-id="cjan8r4ow0000b9nmg51et8cs" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://swiftly.tips/2017/11/30/1-closure-retain-cycle/" data-id="cjan8w9xh0000hbnm0q1neidw" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -347,7 +347,7 @@ ga('send', 'pageview');
                         
                         <div class="item-inner">
                             <p class="item-category"></p>
-                            <p class="item-title"><a href="/2017/11/30/1-closure-retain-cycle/" class="title">1 Closure retain cycle</a></p>
+                            <p class="item-title"><a href="/2017/11/30/1-closure-retain-cycle/" class="title">1 - Closure retain cycle</a></p>
                             <p class="item-date"><time datetime="2017-11-30T19:07:08.000Z" itemprop="datePublished">2017-11-30</time></p>
                         </div>
                     </li>

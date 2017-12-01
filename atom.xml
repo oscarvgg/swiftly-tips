@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://swiftly.tips/"/>
-  <updated>2017-12-01T01:33:02.046Z</updated>
+  <updated>2017-12-01T01:42:58.000Z</updated>
   <id>http://swiftly.tips/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>1 Closure retain cycle</title>
+    <title>1 - Closure retain cycle</title>
     <link href="http://swiftly.tips/2017/11/30/1-closure-retain-cycle/"/>
     <id>http://swiftly.tips/2017/11/30/1-closure-retain-cycle/</id>
     <published>2017-11-30T19:07:08.000Z</published>
-    <updated>2017-12-01T01:33:02.046Z</updated>
+    <updated>2017-12-01T01:42:58.000Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,8 @@
       
         
         
-          &lt;h1 id=&quot;1-Closure-retain-cycle&quot;&gt;&lt;a href=&quot;#1-Closure-retain-cycle&quot; class=&quot;headerlink&quot; title=&quot;#1 Closure retain cycle&quot;&gt;&lt;/a&gt;#1 Closure retain
+          &lt;p&gt;Avoid calling &lt;code&gt;self&lt;/code&gt; inside your closure as much as possible.&lt;/p&gt;
+&lt;figure class=&quot;highlight swift&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
         
       
     
