@@ -1,5 +1,5 @@
 ---
-title: 1 - Closure retain cycle
+title: Nº 1 - Closure retain cycle
 date: 2017-11-30 20:07:08
 tags: memory
 ---
