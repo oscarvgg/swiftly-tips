@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://swiftly.tips/"/>
-  <updated>2017-12-01T01:42:58.000Z</updated>
+  <updated>2017-12-07T00:10:50.090Z</updated>
   <id>http://swiftly.tips/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>1 - Closure retain cycle</title>
+    <title>Nº 2 - Ditch the semicolon</title>
+    <link href="http://swiftly.tips/2017/12/07/2-Ditch-the-semicolon/"/>
+    <id>http://swiftly.tips/2017/12/07/2-Ditch-the-semicolon/</id>
+    <published>2017-12-06T23:44:52.000Z</published>
+    <updated>2017-12-07T00:10:50.090Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Every time you use a semicolon (&lt;code&gt;;&lt;/code&gt;) in swift, a tree dies 🙄. Don’t roll your eyes! It’s true.&lt;/p&gt;
+&lt;p&gt;Don’t use them, they
+        
+      
+    
+    </summary>
+    
+    
+      <category term="style" scheme="http://swiftly.tips/tags/style/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Nº 1 - Closure retain cycle</title>
     <link href="http://swiftly.tips/2017/11/30/1-closure-retain-cycle/"/>
     <id>http://swiftly.tips/2017/11/30/1-closure-retain-cycle/</id>
     <published>2017-11-30T19:07:08.000Z</published>
-    <updated>2017-12-01T01:42:58.000Z</updated>
+    <updated>2017-12-07T00:00:27.414Z</updated>
     
     <summary type="html">
     
