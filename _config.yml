@@ -75,8 +75,8 @@ theme: icarus
 # Deployment
 deploy:
   type: git
-  repo: https://github.com/oscarvgg/swiftly-tips.github.io.git
-  branch: master
+  repo: https://github.com/oscarvgg/swiftly-tips.git
+  branch: hg-pages
 
 comment:
     disqus: swiftly-tips
