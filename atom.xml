@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://swiftly.tips/"/>
-  <updated>2017-12-07T00:10:50.090Z</updated>
+  <updated>2018-04-24T09:38:37.951Z</updated>
   <id>http://swiftly.tips/</id>
   
   <author>
@@ -15,6 +15,58 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Nº 4 - Using variadic parameters</title>
+    <link href="http://swiftly.tips/2018/04/24/4-using-variadic-parameters/"/>
+    <id>http://swiftly.tips/2018/04/24/4-using-variadic-parameters/</id>
+    <published>2018-04-24T09:28:13.000Z</published>
+    <updated>2018-04-24T09:38:37.951Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Want your array parameters to look way cooler?&lt;/p&gt;
+&lt;h2 id=&quot;Boring&quot;&gt;&lt;a href=&quot;#Boring&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="style" scheme="http://swiftly.tips/tags/style/"/>
+    
+      <category term="syntax" scheme="http://swiftly.tips/tags/syntax/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Nº 3 - Printing multiple variables at once?</title>
+    <link href="http://swiftly.tips/2018/04/24/3-print-multiple-things/"/>
+    <id>http://swiftly.tips/2018/04/24/3-print-multiple-things/</id>
+    <published>2018-04-24T09:15:33.000Z</published>
+    <updated>2018-04-24T09:27:11.001Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Wanna print multiple variables?&lt;/p&gt;
+&lt;h2 id=&quot;Problem&quot;&gt;&lt;a href=&quot;#Problem&quot; class=&quot;headerlink&quot; title=&quot;Problem&quot;&gt;&lt;/a&gt;Problem&lt;/h2&gt;&lt;figure
+        
+      
+    
+    </summary>
+    
+    
+      <category term="style" scheme="http://swiftly.tips/tags/style/"/>
+    
+  </entry>
   
   <entry>
     <title>Nº 2 - Ditch the semicolon</title>

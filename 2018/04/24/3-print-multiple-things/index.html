@@ -3,27 +3,27 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Nº 2 - Ditch the semicolon | Swiftly tips</title>
+    <title>Nº 3 - Printing multiple variables at once? | Swiftly tips</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="Every time you use a semicolon (;) in swift, a tree dies 🙄. Don’t roll your eyes! It’s true.
-Don’t use them, they are a thing of the past. They make your code look ugly and nasty.
-Look how ugly:
-12le">
+    <meta name="description" content="Wanna print multiple variables?
+Problem12345let name = &quot;Tony&quot;let lastName: &quot;Stark&quot;print(name)print(lastName)
+Better solutionWrap them on a tuple.
+1234let name = &quot;Tony&quot;let lastName: &quot;Stark&quot;print((name,">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Nº 2 - Ditch the semicolon">
-<meta property="og:url" content="http://swiftly.tips/2017/12/07/2-Ditch-the-semicolon/index.html">
+<meta property="og:title" content="Nº 3 - Printing multiple variables at once?">
+<meta property="og:url" content="http://swiftly.tips/2018/04/24/3-print-multiple-things/index.html">
 <meta property="og:site_name" content="Swiftly tips">
-<meta property="og:description" content="Every time you use a semicolon (;) in swift, a tree dies 🙄. Don’t roll your eyes! It’s true.
-Don’t use them, they are a thing of the past. They make your code look ugly and nasty.
-Look how ugly:
-12le">
-<meta property="og:updated_time" content="2017-12-07T00:10:50.090Z">
+<meta property="og:description" content="Wanna print multiple variables?
+Problem12345let name = &quot;Tony&quot;let lastName: &quot;Stark&quot;print(name)print(lastName)
+Better solutionWrap them on a tuple.
+1234let name = &quot;Tony&quot;let lastName: &quot;Stark&quot;print((name,">
+<meta property="og:updated_time" content="2018-04-24T09:27:11.001Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Nº 2 - Ditch the semicolon">
-<meta name="twitter:description" content="Every time you use a semicolon (;) in swift, a tree dies 🙄. Don’t roll your eyes! It’s true.
-Don’t use them, they are a thing of the past. They make your code look ugly and nasty.
-Look how ugly:
-12le">
+<meta name="twitter:title" content="Nº 3 - Printing multiple variables at once?">
+<meta name="twitter:description" content="Wanna print multiple variables?
+Problem12345let name = &quot;Tony&quot;let lastName: &quot;Stark&quot;print(name)print(lastName)
+Better solutionWrap them on a tuple.
+1234let name = &quot;Tony&quot;let lastName: &quot;Stark&quot;print((name,">
     
 
     
@@ -142,7 +142,7 @@ ga('send', 'pageview');
 
         <div class="outer">
             
-            <section id="main"><article id="post-2-Ditch-the-semicolon" class="article article-type-post" itemscope itemprop="blogPost">
+            <section id="main"><article id="post-3-print-multiple-things" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -150,7 +150,7 @@ ga('send', 'pageview');
                 
     
         <h1 class="article-title" itemprop="name">
-            Nº 2 - Ditch the semicolon
+            Nº 3 - Printing multiple variables at once?
         </h1>
     
 
@@ -159,8 +159,8 @@ ga('send', 'pageview');
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2017/12/07/2-Ditch-the-semicolon/">
-            <time datetime="2017-12-06T23:44:52.000Z" itemprop="datePublished">2017-12-07</time>
+        <a href="/2018/04/24/3-print-multiple-things/">
+            <time datetime="2018-04-24T09:15:33.000Z" itemprop="datePublished">2018-04-24</time>
         </a>
     </div>
 
@@ -180,13 +180,11 @@ ga('send', 'pageview');
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p>Every time you use a semicolon (<code>;</code>) in swift, a tree dies 🙄. Don’t roll your eyes! It’s true.</p>
-<p>Don’t use them, they are a thing of the past. They make your code look ugly and nasty.</p>
-<p>Look how ugly:</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> lukeSkywalker = <span class="type">JediKnight</span>();</div><div class="line">lukeSkywalker.savePrincessLeia();</div></pre></td></tr></table></figure>
-<p>Now look how beautiful:</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> lukeSkywalker = <span class="type">JediKnight</span>()</div><div class="line">lukeSkywalker.savePrincessLeia()</div></pre></td></tr></table></figure>
-<p>Nice, clean, perfect 😌. </p>
+            <p>Wanna print multiple variables?</p>
+<h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> name = <span class="string">"Tony"</span></div><div class="line"><span class="keyword">let</span> lastName: <span class="string">"Stark"</span></div><div class="line"></div><div class="line"><span class="built_in">print</span>(name)</div><div class="line"><span class="built_in">print</span>(lastName)</div></pre></td></tr></table></figure>
+<h2 id="Better-solution"><a href="#Better-solution" class="headerlink" title="Better solution"></a>Better solution</h2><p>Wrap them on a tuple.</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> name = <span class="string">"Tony"</span></div><div class="line"><span class="keyword">let</span> lastName: <span class="string">"Stark"</span></div><div class="line"></div><div class="line"><span class="built_in">print</span>((name, lastName))</div></pre></td></tr></table></figure>
+<p>Awh, syntactic sugar ☺️</p>
 
         
         </div>
@@ -197,7 +195,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://swiftly.tips/2017/12/07/2-Ditch-the-semicolon/" data-id="cjgdiiniz00012s9k6aexgd5q" class="article-share-link"><i class="fa fa-share"></i>Compartir</a>
+    <a data-url="http://swiftly.tips/2018/04/24/3-print-multiple-things/" data-id="cjgdiinju00072s9kfzjq8k1s" class="article-share-link"><i class="fa fa-share"></i>Compartir</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -265,7 +263,7 @@ ga('send', 'pageview');
 
             
     
-        <a href="http://swiftly.tips/2017/12/07/2-Ditch-the-semicolon/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://swiftly.tips/2017/12/07/2-Ditch-the-semicolon/">Comentarios</a>
+        <a href="http://swiftly.tips/2018/04/24/3-print-multiple-things/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://swiftly.tips/2018/04/24/3-print-multiple-things/">Comentarios</a>
     
 
         </footer>
@@ -274,19 +272,19 @@ ga('send', 'pageview');
         
 <nav id="article-nav">
     
-        <a href="/2018/04/24/3-print-multiple-things/" id="article-nav-newer" class="article-nav-link-wrap">
+        <a href="/2018/04/24/4-using-variadic-parameters/" id="article-nav-newer" class="article-nav-link-wrap">
             <strong class="article-nav-caption">Más nuevo</strong>
             <div class="article-nav-title">
                 
-                    Nº 3 - Printing multiple variables at once?
+                    Nº 4 - Using variadic parameters
                 
             </div>
         </a>
     
     
-        <a href="/2017/11/30/1-closure-retain-cycle/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2017/12/07/2-Ditch-the-semicolon/" id="article-nav-older" class="article-nav-link-wrap">
             <strong class="article-nav-caption">Más viejo</strong>
-            <div class="article-nav-title">Nº 1 - Closure retain cycle</div>
+            <div class="article-nav-title">Nº 2 - Ditch the semicolon</div>
         </a>
     
 </nav>
@@ -386,9 +384,9 @@ ga('send', 'pageview');
     <script>
     var disqus_config = function () {
         
-            this.page.url = 'http://swiftly.tips/2017/12/07/2-Ditch-the-semicolon/';
+            this.page.url = 'http://swiftly.tips/2018/04/24/3-print-multiple-things/';
         
-        this.page.identifier = '2-Ditch-the-semicolon';
+        this.page.identifier = '3-print-multiple-things';
     };
     (function() { 
         var d = document, s = d.createElement('script');  

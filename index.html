@@ -68,20 +68,10 @@ ga('send', 'pageview');
                 
             </nav>
             
-                
-                <nav id="sub-nav">
-                    <div class="profile" id="profile-nav">
-                        <a id="profile-anchor" href="javascript:;">
-                            <img class="avatar" src="/css/images/avatar.png" />
-                            <i class="fa fa-caret-down"></i>
-                        </a>
-                    </div>
-                </nav>
-            
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar" />
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -100,10 +90,10 @@ ga('send', 'pageview');
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Posts',
+            POSTS: 'Entradas',
             PAGES: 'Pages',
-            CATEGORIES: 'Categories',
-            TAGS: 'Tags',
+            CATEGORIES: 'Categorias',
+            TAGS: 'Etiquetas',
             UNTITLED: '(Untitled)',
         },
         ROOT_URL: '/',
@@ -128,7 +118,7 @@ ga('send', 'pageview');
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar" />
     </div>
 
                 </td>
@@ -139,61 +129,8 @@ ga('send', 'pageview');
 
         <div class="outer">
             
-                
-
-<aside id="profile">
-    <div class="inner profile-inner">
-        <div class="base-info profile-block">
-            <img id="avatar" src="/css/images/avatar.png" />
-            <h2 id="name">Oscarvgg</h2>
-            <h3 id="title">Software engineer</h3>
-            <span id="location"><i class="fa fa-map-marker"></i>Milan, Italy</span>
-            <a id="follow" target="_blank" href="https://github.com/OscarVGG/">FOLLOW</a>
-        </div>
-        <div class="article-info profile-block">
-            <div class="article-info-block">
-                2
-                <span>posts</span>
-            </div>
-            <div class="article-info-block">
-                2
-                <span>tags</span>
-            </div>
-        </div>
-        
-        <div class="profile-block social-links">
-            <table>
-                <tr>
-                    
-                    
-                    <td>
-                        <a href="http://github.com/oscarvgg" target="_blank" title="github" class=tooltip>
-                            <i class="fa fa-github"></i>
-                        </a>
-                    </td>
-                    
-                    <td>
-                        <a href="https://twitter.com/OscarVGG" target="_blank" title="twitter" class=tooltip>
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                    </td>
-                    
-                    <td>
-                        <a href="/atom.xml" target="_blank" title="rss" class=tooltip>
-                            <i class="fa fa-rss"></i>
-                        </a>
-                    </td>
-                    
-                </tr>
-            </table>
-        </div>
-        
-    </div>
-</aside>
-
-            
             <section id="main">
-    <article id="post-2-Ditch-the-semicolon" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-4-using-variadic-parameters" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -201,7 +138,7 @@ ga('send', 'pageview');
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2017/12/07/2-Ditch-the-semicolon/">Nº 2 - Ditch the semicolon</a>
+            <a class="article-title" href="/2018/04/24/4-using-variadic-parameters/">Nº 4 - Using variadic parameters</a>
         </h1>
     
 
@@ -210,8 +147,8 @@ ga('send', 'pageview');
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2017/12/07/2-Ditch-the-semicolon/">
-            <time datetime="2017-12-06T23:44:52.000Z" itemprop="datePublished">2017-12-07</time>
+        <a href="/2018/04/24/4-using-variadic-parameters/">
+            <time datetime="2018-04-24T09:28:13.000Z" itemprop="datePublished">2018-04-24</time>
         </a>
     </div>
 
@@ -220,7 +157,7 @@ ga('send', 'pageview');
                         
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/style/">style</a>
+        <a class="tag-link" href="/tags/style/">style</a>, <a class="tag-link" href="/tags/syntax/">syntax</a>
     </div>
 
                     </div>
@@ -231,13 +168,10 @@ ga('send', 'pageview');
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p>Every time you use a semicolon (<code>;</code>) in swift, a tree dies 🙄. Don’t roll your eyes! It’s true.</p>
-<p>Don’t use them, they are a thing of the past. They make your code look ugly and nasty.</p>
-<p>Look how ugly:</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> lukeSkywalker = <span class="type">JediKnight</span>();</div><div class="line">lukeSkywalker.savePrincessLeia();</div></pre></td></tr></table></figure>
-<p>Now look how beautiful:</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> lukeSkywalker = <span class="type">JediKnight</span>()</div><div class="line">lukeSkywalker.savePrincessLeia()</div></pre></td></tr></table></figure>
-<p>Nice, clean, perfect 😌. </p>
+            <p>Want your array parameters to look way cooler?</p>
+<h2 id="Boring"><a href="#Boring" class="headerlink" title="Boring"></a>Boring</h2><figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">func</span> <span class="title">trapInUpsideDown</span><span class="params">(people: [String])</span></span> &#123;</div><div class="line">  <span class="comment">// ... your code here</span></div><div class="line">&#125;</div><div class="line"></div><div class="line">trapInUpsideDown(people: [“<span class="type">Dustin</span>”,”<span class="type">Mike</span>”,”<span class="type">Lucas</span>”, <span class="string">"Will"</span>])</div></pre></td></tr></table></figure>
+<h2 id="Cooler-look"><a href="#Cooler-look" class="headerlink" title="Cooler look"></a>Cooler look</h2><figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">func</span> <span class="title">trapInUpsideDown</span><span class="params">(<span class="number">_</span> people: String...)</span></span> &#123;</div><div class="line">  <span class="comment">// ... your code here</span></div><div class="line">&#125;</div><div class="line"></div><div class="line">trapInUpsideDown(“<span class="type">Dustin</span>”,”<span class="type">Mike</span>”,”<span class="type">Lucas</span>”, <span class="string">"Will"</span>)</div></pre></td></tr></table></figure>
+<p>😉</p>
 
         
         </div>
@@ -248,7 +182,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://swiftly.tips/2017/12/07/2-Ditch-the-semicolon/" data-id="cjavq8tik0000cfnm82my43t3" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://swiftly.tips/2018/04/24/4-using-variadic-parameters/" data-id="cjgdiinjt00062s9kvj3vnyw3" class="article-share-link"><i class="fa fa-share"></i>Compartir</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -316,7 +250,271 @@ ga('send', 'pageview');
 
             
     
-        <a href="http://swiftly.tips/2017/12/07/2-Ditch-the-semicolon/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://swiftly.tips/2017/12/07/2-Ditch-the-semicolon/">Comments</a>
+        <a href="http://swiftly.tips/2018/04/24/4-using-variadic-parameters/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://swiftly.tips/2018/04/24/4-using-variadic-parameters/">Comentarios</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-3-print-multiple-things" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2018/04/24/3-print-multiple-things/">Nº 3 - Printing multiple variables at once?</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2018/04/24/3-print-multiple-things/">
+            <time datetime="2018-04-24T09:15:33.000Z" itemprop="datePublished">2018-04-24</time>
+        </a>
+    </div>
+
+
+                        
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/style/">style</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p>Wanna print multiple variables?</p>
+<h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> name = <span class="string">"Tony"</span></div><div class="line"><span class="keyword">let</span> lastName: <span class="string">"Stark"</span></div><div class="line"></div><div class="line"><span class="built_in">print</span>(name)</div><div class="line"><span class="built_in">print</span>(lastName)</div></pre></td></tr></table></figure>
+<h2 id="Better-solution"><a href="#Better-solution" class="headerlink" title="Better solution"></a>Better solution</h2><p>Wrap them on a tuple.</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> name = <span class="string">"Tony"</span></div><div class="line"><span class="keyword">let</span> lastName: <span class="string">"Stark"</span></div><div class="line"></div><div class="line"><span class="built_in">print</span>((name, lastName))</div></pre></td></tr></table></figure>
+<p>Awh, syntactic sugar ☺️</p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://swiftly.tips/2018/04/24/3-print-multiple-things/" data-id="cjgdiinju00072s9kfzjq8k1s" class="article-share-link"><i class="fa fa-share"></i>Compartir</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://swiftly.tips/2018/04/24/3-print-multiple-things/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://swiftly.tips/2018/04/24/3-print-multiple-things/">Comentarios</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-2-Ditch-the-semicolon" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2017/12/07/2-Ditch-the-semicolon/">Nº 2 - Ditch the semicolon</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2017/12/07/2-Ditch-the-semicolon/">
+            <time datetime="2017-12-06T23:44:52.000Z" itemprop="datePublished">2017-12-07</time>
+        </a>
+    </div>
+
+
+                        
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/style/">style</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p>Every time you use a semicolon (<code>;</code>) in swift, a tree dies 🙄. Don’t roll your eyes! It’s true.</p>
+<p>Don’t use them, they are a thing of the past. They make your code look ugly and nasty.</p>
+<p>Look how ugly:</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> lukeSkywalker = <span class="type">JediKnight</span>();</div><div class="line">lukeSkywalker.savePrincessLeia();</div></pre></td></tr></table></figure>
+<p>Now look how beautiful:</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> lukeSkywalker = <span class="type">JediKnight</span>()</div><div class="line">lukeSkywalker.savePrincessLeia()</div></pre></td></tr></table></figure>
+<p>Nice, clean, perfect 😌. </p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://swiftly.tips/2017/12/07/2-Ditch-the-semicolon/" data-id="cjgdiiniz00012s9k6aexgd5q" class="article-share-link"><i class="fa fa-share"></i>Compartir</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://swiftly.tips/2017/12/07/2-Ditch-the-semicolon/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://swiftly.tips/2017/12/07/2-Ditch-the-semicolon/">Comentarios</a>
     
 
         </footer>
@@ -379,7 +577,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://swiftly.tips/2017/11/30/1-closure-retain-cycle/" data-id="cjavq8tin0001cfnmajzcqvaw" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://swiftly.tips/2017/11/30/1-closure-retain-cycle/" data-id="cjgdiiniv00002s9krufzaop9" class="article-share-link"><i class="fa fa-share"></i>Compartir</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -447,7 +645,7 @@ ga('send', 'pageview');
 
             
     
-        <a href="http://swiftly.tips/2017/11/30/1-closure-retain-cycle/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://swiftly.tips/2017/11/30/1-closure-retain-cycle/">Comments</a>
+        <a href="http://swiftly.tips/2017/11/30/1-closure-retain-cycle/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://swiftly.tips/2017/11/30/1-closure-retain-cycle/">Comentarios</a>
     
 
         </footer>
@@ -462,21 +660,29 @@ ga('send', 'pageview');
    
         
     <div class="widget-wrap">
-        <h3 class="widget-title">recent</h3>
+        <h3 class="widget-title">Recientes</h3>
         <div class="widget">
-            <ul id="recent-post" class="">
+            <ul id="recent-post" class="no-thumbnail">
                 
                     <li>
                         
-                        <div class="item-thumbnail">
-                            <a href="/2017/12/07/2-Ditch-the-semicolon/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-</a>
-
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/04/24/4-using-variadic-parameters/" class="title">Nº 4 - Using variadic parameters</a></p>
+                            <p class="item-date"><time datetime="2018-04-24T09:28:13.000Z" itemprop="datePublished">2018-04-24</time></p>
                         </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/04/24/3-print-multiple-things/" class="title">Nº 3 - Printing multiple variables at once?</a></p>
+                            <p class="item-date"><time datetime="2018-04-24T09:15:33.000Z" itemprop="datePublished">2018-04-24</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
                         
                         <div class="item-inner">
                             <p class="item-category"></p>
@@ -486,16 +692,6 @@ ga('send', 'pageview');
                     </li>
                 
                     <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2017/11/30/1-closure-retain-cycle/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-</a>
-
-                        </div>
                         
                         <div class="item-inner">
                             <p class="item-category"></p>
@@ -513,45 +709,11 @@ ga('send', 'pageview');
     
         
     <div class="widget-wrap">
-        <h3 class="widget-title">archives</h3>
+        <h3 class="widget-title">Etiquetas</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">November 2017</a><span class="archive-list-count">1</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/memory/">memory</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/style/">style</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/syntax/">syntax</a><span class="tag-list-count">1</span></li></ul>
         </div>
     </div>
-
-    
-        
-    <div class="widget-wrap">
-        <h3 class="widget-title">tags</h3>
-        <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/memory/">memory</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/style/">style</a><span class="tag-list-count">1</span></li></ul>
-        </div>
-    </div>
-
-    
-        
-    <div class="widget-wrap">
-        <h3 class="widget-title">tag cloud</h3>
-        <div class="widget tagcloud">
-            <a href="/tags/memory/" style="font-size: 10px;">memory</a> <a href="/tags/style/" style="font-size: 10px;">style</a>
-        </div>
-    </div>
-
-    
-        
-    <div class="widget-wrap widget-list">
-        <h3 class="widget-title">links</h3>
-        <div class="widget">
-            <ul>
-                
-                    <li>
-                        <a href="http://hexo.io">Hexo</a>
-                    </li>
-                
-            </ul>
-        </div>
-    </div>
-
 
     
     <div id="toTop" class="fa fa-angle-up"></div>
@@ -561,7 +723,7 @@ ga('send', 'pageview');
         <footer id="footer">
     <div class="outer">
         <div id="footer-info" class="inner">
-            &copy; 2017 Oscar V. Gonzalez Greco<br>
+            &copy; 2018 Oscar V. Gonzalez Greco<br>
             Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>
         </div>
     </div>
