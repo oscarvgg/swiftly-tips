@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://swiftly.tips/"/>
-  <updated>2018-04-24T09:38:37.951Z</updated>
+  <updated>2018-11-11T18:31:35.770Z</updated>
   <id>http://swiftly.tips/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Swift tutorial: Value types</title>
+    <link href="http://swiftly.tips/2018/11/09/5-swift-tutorial-learn-data-structures/"/>
+    <id>http://swiftly.tips/2018/11/09/5-swift-tutorial-learn-data-structures/</id>
+    <published>2018-11-09T08:10:05.000Z</published>
+    <updated>2018-11-11T18:31:35.770Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;I created this site to help people improve their code. And that’s still the mission today. Over the years, and especially in the recent
+        
+      
+    
+    </summary>
+    
+    
+      <category term="basics" scheme="http://swiftly.tips/tags/basics/"/>
+    
+      <category term="tutorial" scheme="http://swiftly.tips/tags/tutorial/"/>
+    
+  </entry>
   
   <entry>
     <title>Nº 4 - Using variadic parameters</title>

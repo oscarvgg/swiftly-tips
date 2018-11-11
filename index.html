@@ -71,7 +71,7 @@ ga('send', 'pageview');
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -90,10 +90,10 @@ ga('send', 'pageview');
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Entradas',
+            POSTS: 'Posts',
             PAGES: 'Pages',
-            CATEGORIES: 'Categorias',
-            TAGS: 'Etiquetas',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
             UNTITLED: '(Untitled)',
         },
         ROOT_URL: '/',
@@ -118,7 +118,7 @@ ga('send', 'pageview');
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
     </div>
 
                 </td>
@@ -130,7 +130,7 @@ ga('send', 'pageview');
         <div class="outer">
             
             <section id="main">
-    <article id="post-4-using-variadic-parameters" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-5-swift-tutorial-learn-data-structures" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -138,7 +138,7 @@ ga('send', 'pageview');
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2018/04/24/4-using-variadic-parameters/">Nº 4 - Using variadic parameters</a>
+            <a class="article-title" href="/2018/11/09/5-swift-tutorial-learn-data-structures/">Swift tutorial: Value types</a>
         </h1>
     
 
@@ -147,8 +147,8 @@ ga('send', 'pageview');
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2018/04/24/4-using-variadic-parameters/">
-            <time datetime="2018-04-24T09:28:13.000Z" itemprop="datePublished">2018-04-24</time>
+        <a href="/2018/11/09/5-swift-tutorial-learn-data-structures/">
+            <time datetime="2018-11-09T08:10:05.000Z" itemprop="datePublished">2018-11-09</time>
         </a>
     </div>
 
@@ -157,7 +157,7 @@ ga('send', 'pageview');
                         
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/style/">style</a>, <a class="tag-link" href="/tags/syntax/">syntax</a>
+        <a class="tag-link" href="/tags/basics/">basics</a>, <a class="tag-link" href="/tags/tutorial/">tutorial</a>
     </div>
 
                     </div>
@@ -168,10 +168,30 @@ ga('send', 'pageview');
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p>Want your array parameters to look way cooler?</p>
-<h2 id="Boring"><a href="#Boring" class="headerlink" title="Boring"></a>Boring</h2><figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">func</span> <span class="title">trapInUpsideDown</span><span class="params">(people: [String])</span></span> &#123;</div><div class="line">  <span class="comment">// ... your code here</span></div><div class="line">&#125;</div><div class="line"></div><div class="line">trapInUpsideDown(people: [“<span class="type">Dustin</span>”,”<span class="type">Mike</span>”,”<span class="type">Lucas</span>”, <span class="string">"Will"</span>])</div></pre></td></tr></table></figure>
-<h2 id="Cooler-look"><a href="#Cooler-look" class="headerlink" title="Cooler look"></a>Cooler look</h2><figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">func</span> <span class="title">trapInUpsideDown</span><span class="params">(<span class="number">_</span> people: String...)</span></span> &#123;</div><div class="line">  <span class="comment">// ... your code here</span></div><div class="line">&#125;</div><div class="line"></div><div class="line">trapInUpsideDown(“<span class="type">Dustin</span>”,”<span class="type">Mike</span>”,”<span class="type">Lucas</span>”, <span class="string">"Will"</span>)</div></pre></td></tr></table></figure>
-<p>😉</p>
+            <p>I created this site to help people improve their code. And that’s still the mission today. Over the years, and especially in the recent months, I’ve seen so many young programmers get confused with some of the basic foundations of Swift. That’s why I decided to create this series of swift tutorials explaining the basics of the language.</p>
+<p>So, let’s get started!</p>
+<h2 id="What-is-Swift-and-why-Apple-created-it"><a href="#What-is-Swift-and-why-Apple-created-it" class="headerlink" title="What is Swift and why Apple created it?"></a>What is Swift and why Apple created it?</h2><p>Swift is a programming language created by Apple. It’s easy to learn, but in my opinion difficult to master, however, the easy part will do for most of what you’ll need. Swift is a strongly typed language and has a familiar syntax for developers that come from other famous languages.</p>
+<p>Swift was created, among other reasons, to make building apps for the Apple platform beginner friendly. Previously the scene was dominated by Objective-C. A powerful language with a syntax peculiar enough to confuse less experienced developers. Therefore, Apple came with this new pleasant-to-write language, not only attract young developers but also the very experienced ones.</p>
+<p>If you want to learn more about what is Swift, you can visit the <a href="https://docs.swift.org/swift-book" target="_blank" rel="external">official website</a>.</p>
+<h2 id="What-is-a-type"><a href="#What-is-a-type" class="headerlink" title="What is a type?"></a>What is a type?</h2><p>A type is an attribute we give to our data to tell the compiler how we intend to use it. In Swift, there are two kinds of data types: the “value” types and the “reference” types.</p>
+<p>To keep the right pace, in this article we are going to talk about just value types.</p>
+<h2 id="What-is-a-value"><a href="#What-is-a-value" class="headerlink" title="What is a value?"></a>What is a value?</h2><p>A value is an instance of some data, like a number or text. In Swift, most of the commonly used value types are represented with <code>struct</code>, like <code>Int</code>, <code>Bool</code>, <code>String</code>, etc. But also another common way to represent a value type is <code>enum</code>. Here are some examples of values in Swift:</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="literal">true</span></div><div class="line"><span class="string">"Hello!"</span></div><div class="line">[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]</div></pre></td></tr></table></figure>
+<p>But what do we do with just values? We need to be able to identify them so we can move them around.</p>
+<h2 id="Introducing-Variables"><a href="#Introducing-Variables" class="headerlink" title="Introducing Variables"></a>Introducing Variables</h2><p>So again, what do we do with a value? We store it and run operations on it. How? Well, first we need to label it.</p>
+<p>A variable is just a label that helps you identify your value for later use.</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="string">"Hello world"</span></div></pre></td></tr></table></figure>
+<p>It’s important to understand, that When we run an operation that mutates our value, we don’t change the original, but instead, a new one gets created and replaces the old value. Knowing this will help you decide what kind of data type to use when coding.</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> b = [<span class="string">"Hello"</span>, <span class="string">"World"</span>]</div><div class="line">b.append(<span class="string">"!"</span>)</div><div class="line"><span class="comment">// b = ["Hello", "World", "!"]</span></div></pre></td></tr></table></figure>
+<h3 id="Constants"><a href="#Constants" class="headerlink" title="Constants"></a>Constants</h3><p>Constants are mostly like variables but, once they’re assigned with a value, they cannot be reassigned. In Swift, they are declared with the keyword <code>let</code>.</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> <span class="built_in">c</span> = <span class="number">1</span></div></pre></td></tr></table></figure>
+<p>Trying to assign <code>c = 2</code> will result in a compiler error</p>
+<h2 id="Passing-Values-Around"><a href="#Passing-Values-Around" class="headerlink" title="Passing Values Around"></a>Passing Values Around</h2><p>When working with value types, if we assign a variable to another, the value gets copied from one to the other. While the two variables may have the same value, changing one won’t affect the other.</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> d = b <span class="comment">// ["Hello", "World", "!"]</span></div><div class="line">d.append(<span class="string">"from Italy"</span>)</div><div class="line"><span class="comment">// ["Hello", "World", "!", "from Italy"]</span></div></pre></td></tr></table></figure>
+<p>Notice how <code>b</code> stays the same, while the value of <code>d</code> changed.</p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>This is all for now about value types in Swift. Hope you liked it and feel excited to go and play with what you’ve learned. On the next part, I’m going to talk about reference types.</p>
+<p>If you like what you just read or want me to continue writing about the Swift basics, please subscribe to receive on your email a monthly summary of the activity of the blog. Also, please share this content to keep me motivated. And if you have any questions or something to add, let me know on the comments section below.</p>
+<p>Bye 😉</p>
 
         
         </div>
@@ -182,7 +202,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://swiftly.tips/2018/04/24/4-using-variadic-parameters/" data-id="cjgdiinjt00062s9kvj3vnyw3" class="article-share-link"><i class="fa fa-share"></i>Compartir</a>
+    <a data-url="http://swiftly.tips/2018/11/09/5-swift-tutorial-learn-data-structures/" data-id="cjod80y7d0001oy6idfh5f44x" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -250,7 +270,137 @@ ga('send', 'pageview');
 
             
     
-        <a href="http://swiftly.tips/2018/04/24/4-using-variadic-parameters/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://swiftly.tips/2018/04/24/4-using-variadic-parameters/">Comentarios</a>
+        <a href="http://swiftly.tips/2018/11/09/5-swift-tutorial-learn-data-structures/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://swiftly.tips/2018/11/09/5-swift-tutorial-learn-data-structures/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-4-using-variadic-parameters" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2018/04/24/4-using-variadic-parameters/">Nº 4 - Using variadic parameters</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2018/04/24/4-using-variadic-parameters/">
+            <time datetime="2018-04-24T09:28:13.000Z" itemprop="datePublished">2018-04-24</time>
+        </a>
+    </div>
+
+
+                        
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/style/">style</a>, <a class="tag-link" href="/tags/syntax/">syntax</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p>Want your array parameters to look way cooler?</p>
+<h2 id="Boring"><a href="#Boring" class="headerlink" title="Boring"></a>Boring</h2><figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">func</span> <span class="title">trapInUpsideDown</span><span class="params">(people: [String])</span></span> &#123;</div><div class="line">  <span class="comment">// ... your code here</span></div><div class="line">&#125;</div><div class="line"></div><div class="line">trapInUpsideDown(people: [“<span class="type">Dustin</span>”,”<span class="type">Mike</span>”,”<span class="type">Lucas</span>”, <span class="string">"Will"</span>])</div></pre></td></tr></table></figure>
+<h2 id="Cooler-look"><a href="#Cooler-look" class="headerlink" title="Cooler look"></a>Cooler look</h2><figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">func</span> <span class="title">trapInUpsideDown</span><span class="params">(<span class="number">_</span> people: String...)</span></span> &#123;</div><div class="line">  <span class="comment">// ... your code here</span></div><div class="line">&#125;</div><div class="line"></div><div class="line">trapInUpsideDown(“<span class="type">Dustin</span>”,”<span class="type">Mike</span>”,”<span class="type">Lucas</span>”, <span class="string">"Will"</span>)</div></pre></td></tr></table></figure>
+<p>😉</p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://swiftly.tips/2018/04/24/4-using-variadic-parameters/" data-id="cjod80y7j0005oy6ib0i56cyh" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://swiftly.tips/2018/04/24/4-using-variadic-parameters/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://swiftly.tips/2018/04/24/4-using-variadic-parameters/">Comments</a>
     
 
         </footer>
@@ -313,7 +463,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://swiftly.tips/2018/04/24/3-print-multiple-things/" data-id="cjgdiinju00072s9kfzjq8k1s" class="article-share-link"><i class="fa fa-share"></i>Compartir</a>
+    <a data-url="http://swiftly.tips/2018/04/24/3-print-multiple-things/" data-id="cjod80y7h0003oy6i8cycag61" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -381,7 +531,7 @@ ga('send', 'pageview');
 
             
     
-        <a href="http://swiftly.tips/2018/04/24/3-print-multiple-things/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://swiftly.tips/2018/04/24/3-print-multiple-things/">Comentarios</a>
+        <a href="http://swiftly.tips/2018/04/24/3-print-multiple-things/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://swiftly.tips/2018/04/24/3-print-multiple-things/">Comments</a>
     
 
         </footer>
@@ -446,7 +596,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://swiftly.tips/2017/12/07/2-Ditch-the-semicolon/" data-id="cjgdiiniz00012s9k6aexgd5q" class="article-share-link"><i class="fa fa-share"></i>Compartir</a>
+    <a data-url="http://swiftly.tips/2017/12/07/2-Ditch-the-semicolon/" data-id="cjod80y7a0000oy6iszp5ugi0" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -514,7 +664,7 @@ ga('send', 'pageview');
 
             
     
-        <a href="http://swiftly.tips/2017/12/07/2-Ditch-the-semicolon/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://swiftly.tips/2017/12/07/2-Ditch-the-semicolon/">Comentarios</a>
+        <a href="http://swiftly.tips/2017/12/07/2-Ditch-the-semicolon/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://swiftly.tips/2017/12/07/2-Ditch-the-semicolon/">Comments</a>
     
 
         </footer>
@@ -577,7 +727,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://swiftly.tips/2017/11/30/1-closure-retain-cycle/" data-id="cjgdiiniv00002s9krufzaop9" class="article-share-link"><i class="fa fa-share"></i>Compartir</a>
+    <a data-url="http://swiftly.tips/2017/11/30/1-closure-retain-cycle/" data-id="cjod80y7i0004oy6ic36vuwlg" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -645,7 +795,7 @@ ga('send', 'pageview');
 
             
     
-        <a href="http://swiftly.tips/2017/11/30/1-closure-retain-cycle/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://swiftly.tips/2017/11/30/1-closure-retain-cycle/">Comentarios</a>
+        <a href="http://swiftly.tips/2017/11/30/1-closure-retain-cycle/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://swiftly.tips/2017/11/30/1-closure-retain-cycle/">Comments</a>
     
 
         </footer>
@@ -660,9 +810,18 @@ ga('send', 'pageview');
    
         
     <div class="widget-wrap">
-        <h3 class="widget-title">Recientes</h3>
+        <h3 class="widget-title">recent</h3>
         <div class="widget">
             <ul id="recent-post" class="no-thumbnail">
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/11/09/5-swift-tutorial-learn-data-structures/" class="title">Swift tutorial: Value types</a></p>
+                            <p class="item-date"><time datetime="2018-11-09T08:10:05.000Z" itemprop="datePublished">2018-11-09</time></p>
+                        </div>
+                    </li>
                 
                     <li>
                         
@@ -709,9 +868,9 @@ ga('send', 'pageview');
     
         
     <div class="widget-wrap">
-        <h3 class="widget-title">Etiquetas</h3>
+        <h3 class="widget-title">tags</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/memory/">memory</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/style/">style</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/syntax/">syntax</a><span class="tag-list-count">1</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/basics/">basics</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/memory/">memory</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/style/">style</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/syntax/">syntax</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tutorial/">tutorial</a><span class="tag-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -766,5 +925,6 @@ ga('send', 'pageview');
 <script src="/js/main.js"></script>
 
     </div>
+    <script src="https://my.hellobar.com/9cf985197519694d2f2c14e4a1ebe7d4d08944e4.js" type="text/javascript" charset="utf-8" async="async"></script>
 </body>
 </html>

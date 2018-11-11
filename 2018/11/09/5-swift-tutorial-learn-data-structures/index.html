@@ -3,27 +3,18 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Nº 3 - Printing multiple variables at once? | Swiftly tips</title>
+    <title>Swift tutorial: Value types | Swiftly tips</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="Wanna print multiple variables?
-Problem12345let name = &quot;Tony&quot;let lastName: &quot;Stark&quot;print(name)print(lastName)
-Better solutionWrap them on a tuple.
-1234let name = &quot;Tony&quot;let lastName: &quot;Stark&quot;print((name,">
+    <meta name="description" content="I created this site to help people improve their code. And that’s still the mission today. Over the years, and especially in the recent months, I’ve seen so many young programmers get confused with so">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Nº 3 - Printing multiple variables at once?">
-<meta property="og:url" content="http://swiftly.tips/2018/04/24/3-print-multiple-things/index.html">
+<meta property="og:title" content="Swift tutorial: Value types">
+<meta property="og:url" content="http://swiftly.tips/2018/11/09/5-swift-tutorial-learn-data-structures/index.html">
 <meta property="og:site_name" content="Swiftly tips">
-<meta property="og:description" content="Wanna print multiple variables?
-Problem12345let name = &quot;Tony&quot;let lastName: &quot;Stark&quot;print(name)print(lastName)
-Better solutionWrap them on a tuple.
-1234let name = &quot;Tony&quot;let lastName: &quot;Stark&quot;print((name,">
-<meta property="og:updated_time" content="2018-04-24T09:27:11.001Z">
+<meta property="og:description" content="I created this site to help people improve their code. And that’s still the mission today. Over the years, and especially in the recent months, I’ve seen so many young programmers get confused with so">
+<meta property="og:updated_time" content="2018-11-11T18:31:35.770Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Nº 3 - Printing multiple variables at once?">
-<meta name="twitter:description" content="Wanna print multiple variables?
-Problem12345let name = &quot;Tony&quot;let lastName: &quot;Stark&quot;print(name)print(lastName)
-Better solutionWrap them on a tuple.
-1234let name = &quot;Tony&quot;let lastName: &quot;Stark&quot;print((name,">
+<meta name="twitter:title" content="Swift tutorial: Value types">
+<meta name="twitter:description" content="I created this site to help people improve their code. And that’s still the mission today. Over the years, and especially in the recent months, I’ve seen so many young programmers get confused with so">
     
 
     
@@ -142,7 +133,7 @@ ga('send', 'pageview');
 
         <div class="outer">
             
-            <section id="main"><article id="post-3-print-multiple-things" class="article article-type-post" itemscope itemprop="blogPost">
+            <section id="main"><article id="post-5-swift-tutorial-learn-data-structures" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -150,7 +141,7 @@ ga('send', 'pageview');
                 
     
         <h1 class="article-title" itemprop="name">
-            Nº 3 - Printing multiple variables at once?
+            Swift tutorial: Value types
         </h1>
     
 
@@ -159,8 +150,8 @@ ga('send', 'pageview');
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2018/04/24/3-print-multiple-things/">
-            <time datetime="2018-04-24T09:15:33.000Z" itemprop="datePublished">2018-04-24</time>
+        <a href="/2018/11/09/5-swift-tutorial-learn-data-structures/">
+            <time datetime="2018-11-09T08:10:05.000Z" itemprop="datePublished">2018-11-09</time>
         </a>
     </div>
 
@@ -169,7 +160,7 @@ ga('send', 'pageview');
                         
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/style/">style</a>
+        <a class="tag-link" href="/tags/basics/">basics</a>, <a class="tag-link" href="/tags/tutorial/">tutorial</a>
     </div>
 
                     </div>
@@ -180,11 +171,30 @@ ga('send', 'pageview');
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p>Wanna print multiple variables?</p>
-<h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> name = <span class="string">"Tony"</span></div><div class="line"><span class="keyword">let</span> lastName: <span class="string">"Stark"</span></div><div class="line"></div><div class="line"><span class="built_in">print</span>(name)</div><div class="line"><span class="built_in">print</span>(lastName)</div></pre></td></tr></table></figure>
-<h2 id="Better-solution"><a href="#Better-solution" class="headerlink" title="Better solution"></a>Better solution</h2><p>Wrap them on a tuple.</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> name = <span class="string">"Tony"</span></div><div class="line"><span class="keyword">let</span> lastName: <span class="string">"Stark"</span></div><div class="line"></div><div class="line"><span class="built_in">print</span>((name, lastName))</div></pre></td></tr></table></figure>
-<p>Awh, syntactic sugar ☺️</p>
+            <p>I created this site to help people improve their code. And that’s still the mission today. Over the years, and especially in the recent months, I’ve seen so many young programmers get confused with some of the basic foundations of Swift. That’s why I decided to create this series of swift tutorials explaining the basics of the language.</p>
+<p>So, let’s get started!</p>
+<h2 id="What-is-Swift-and-why-Apple-created-it"><a href="#What-is-Swift-and-why-Apple-created-it" class="headerlink" title="What is Swift and why Apple created it?"></a>What is Swift and why Apple created it?</h2><p>Swift is a programming language created by Apple. It’s easy to learn, but in my opinion difficult to master, however, the easy part will do for most of what you’ll need. Swift is a strongly typed language and has a familiar syntax for developers that come from other famous languages.</p>
+<p>Swift was created, among other reasons, to make building apps for the Apple platform beginner friendly. Previously the scene was dominated by Objective-C. A powerful language with a syntax peculiar enough to confuse less experienced developers. Therefore, Apple came with this new pleasant-to-write language, not only attract young developers but also the very experienced ones.</p>
+<p>If you want to learn more about what is Swift, you can visit the <a href="https://docs.swift.org/swift-book" target="_blank" rel="external">official website</a>.</p>
+<h2 id="What-is-a-type"><a href="#What-is-a-type" class="headerlink" title="What is a type?"></a>What is a type?</h2><p>A type is an attribute we give to our data to tell the compiler how we intend to use it. In Swift, there are two kinds of data types: the “value” types and the “reference” types.</p>
+<p>To keep the right pace, in this article we are going to talk about just value types.</p>
+<h2 id="What-is-a-value"><a href="#What-is-a-value" class="headerlink" title="What is a value?"></a>What is a value?</h2><p>A value is an instance of some data, like a number or text. In Swift, most of the commonly used value types are represented with <code>struct</code>, like <code>Int</code>, <code>Bool</code>, <code>String</code>, etc. But also another common way to represent a value type is <code>enum</code>. Here are some examples of values in Swift:</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="literal">true</span></div><div class="line"><span class="string">"Hello!"</span></div><div class="line">[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]</div></pre></td></tr></table></figure>
+<p>But what do we do with just values? We need to be able to identify them so we can move them around.</p>
+<h2 id="Introducing-Variables"><a href="#Introducing-Variables" class="headerlink" title="Introducing Variables"></a>Introducing Variables</h2><p>So again, what do we do with a value? We store it and run operations on it. How? Well, first we need to label it.</p>
+<p>A variable is just a label that helps you identify your value for later use.</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="string">"Hello world"</span></div></pre></td></tr></table></figure>
+<p>It’s important to understand, that When we run an operation that mutates our value, we don’t change the original, but instead, a new one gets created and replaces the old value. Knowing this will help you decide what kind of data type to use when coding.</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> b = [<span class="string">"Hello"</span>, <span class="string">"World"</span>]</div><div class="line">b.append(<span class="string">"!"</span>)</div><div class="line"><span class="comment">// b = ["Hello", "World", "!"]</span></div></pre></td></tr></table></figure>
+<h3 id="Constants"><a href="#Constants" class="headerlink" title="Constants"></a>Constants</h3><p>Constants are mostly like variables but, once they’re assigned with a value, they cannot be reassigned. In Swift, they are declared with the keyword <code>let</code>.</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> <span class="built_in">c</span> = <span class="number">1</span></div></pre></td></tr></table></figure>
+<p>Trying to assign <code>c = 2</code> will result in a compiler error</p>
+<h2 id="Passing-Values-Around"><a href="#Passing-Values-Around" class="headerlink" title="Passing Values Around"></a>Passing Values Around</h2><p>When working with value types, if we assign a variable to another, the value gets copied from one to the other. While the two variables may have the same value, changing one won’t affect the other.</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> d = b <span class="comment">// ["Hello", "World", "!"]</span></div><div class="line">d.append(<span class="string">"from Italy"</span>)</div><div class="line"><span class="comment">// ["Hello", "World", "!", "from Italy"]</span></div></pre></td></tr></table></figure>
+<p>Notice how <code>b</code> stays the same, while the value of <code>d</code> changed.</p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>This is all for now about value types in Swift. Hope you liked it and feel excited to go and play with what you’ve learned. On the next part, I’m going to talk about reference types.</p>
+<p>If you like what you just read or want me to continue writing about the Swift basics, please subscribe to receive on your email a monthly summary of the activity of the blog. Also, please share this content to keep me motivated. And if you have any questions or something to add, let me know on the comments section below.</p>
+<p>Bye 😉</p>
 
         
         </div>
@@ -195,7 +205,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://swiftly.tips/2018/04/24/3-print-multiple-things/" data-id="cjod80y7h0003oy6i8cycag61" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://swiftly.tips/2018/11/09/5-swift-tutorial-learn-data-structures/" data-id="cjod80y7d0001oy6idfh5f44x" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -263,7 +273,7 @@ ga('send', 'pageview');
 
             
     
-        <a href="http://swiftly.tips/2018/04/24/3-print-multiple-things/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://swiftly.tips/2018/04/24/3-print-multiple-things/">Comments</a>
+        <a href="http://swiftly.tips/2018/11/09/5-swift-tutorial-learn-data-structures/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://swiftly.tips/2018/11/09/5-swift-tutorial-learn-data-structures/">Comments</a>
     
 
         </footer>
@@ -272,19 +282,10 @@ ga('send', 'pageview');
         
 <nav id="article-nav">
     
-        <a href="/2018/04/24/4-using-variadic-parameters/" id="article-nav-newer" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">Newer</strong>
-            <div class="article-nav-title">
-                
-                    Nº 4 - Using variadic parameters
-                
-            </div>
-        </a>
     
-    
-        <a href="/2017/12/07/2-Ditch-the-semicolon/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2018/04/24/4-using-variadic-parameters/" id="article-nav-older" class="article-nav-link-wrap">
             <strong class="article-nav-caption">Older</strong>
-            <div class="article-nav-title">Nº 2 - Ditch the semicolon</div>
+            <div class="article-nav-title">Nº 4 - Using variadic parameters</div>
         </a>
     
 </nav>
@@ -393,9 +394,9 @@ ga('send', 'pageview');
     <script>
     var disqus_config = function () {
         
-            this.page.url = 'http://swiftly.tips/2018/04/24/3-print-multiple-things/';
+            this.page.url = 'http://swiftly.tips/2018/11/09/5-swift-tutorial-learn-data-structures/';
         
-        this.page.identifier = '3-print-multiple-things';
+        this.page.identifier = '5-swift-tutorial-learn-data-structures';
     };
     (function() { 
         var d = document, s = d.createElement('script');  
