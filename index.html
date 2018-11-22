@@ -47,6 +47,13 @@ ga('send', 'pageview');
     
     
     
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-9788615321178982",
+    enable_page_level_ads: true
+  });
+</script>
 
 
 </head>
@@ -130,7 +137,7 @@ ga('send', 'pageview');
         <div class="outer">
             
             <section id="main">
-    <article id="post-5-swift-tutorial-learn-data-structures" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-6-swift-tutorial-reference-types" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -138,7 +145,7 @@ ga('send', 'pageview');
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2018/11/09/5-swift-tutorial-learn-data-structures/">Swift tutorial: Value types</a>
+            <a class="article-title" href="/2018/11/22/6-swift-tutorial-reference-types/">Swift tutorial: Value types</a>
         </h1>
     
 
@@ -147,19 +154,14 @@ ga('send', 'pageview');
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2018/11/09/5-swift-tutorial-learn-data-structures/">
-            <time datetime="2018-11-09T08:10:05.000Z" itemprop="datePublished">2018-11-09</time>
+        <a href="/2018/11/22/6-swift-tutorial-reference-types/">
+            <time datetime="2018-11-22T07:53:43.000Z" itemprop="datePublished">2018-11-22</time>
         </a>
     </div>
 
 
                         
                         
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/basics/">basics</a>, <a class="tag-link" href="/tags/tutorial/">tutorial</a>
-    </div>
-
                     </div>
                 
             </header>
@@ -168,30 +170,43 @@ ga('send', 'pageview');
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p>I created this site to help people improve their code. And that’s still the mission today. Over the years, and especially in the recent months, I’ve seen so many young programmers get confused with some of the basic foundations of Swift. That’s why I decided to create this series of swift tutorials explaining the basics of the language.</p>
-<p>So, let’s get started!</p>
-<h2 id="What-is-Swift-and-why-Apple-created-it"><a href="#What-is-Swift-and-why-Apple-created-it" class="headerlink" title="What is Swift and why Apple created it?"></a>What is Swift and why Apple created it?</h2><p>Swift is a programming language created by Apple. It’s easy to learn, but in my opinion difficult to master, however, the easy part will do for most of what you’ll need. Swift is a strongly typed language and has a familiar syntax for developers that come from other famous languages.</p>
-<p>Swift was created, among other reasons, to make building apps for the Apple platform beginner friendly. Previously the scene was dominated by Objective-C. A powerful language with a syntax peculiar enough to confuse less experienced developers. Therefore, Apple came with this new pleasant-to-write language, not only attract young developers but also the very experienced ones.</p>
-<p>If you want to learn more about what is Swift, you can visit the <a href="https://docs.swift.org/swift-book" target="_blank" rel="external">official website</a>.</p>
-<h2 id="What-is-a-type"><a href="#What-is-a-type" class="headerlink" title="What is a type?"></a>What is a type?</h2><p>A type is an attribute we give to our data to tell the compiler how we intend to use it. In Swift, there are two kinds of data types: the “value” types and the “reference” types.</p>
-<p>To keep the right pace, in this article we are going to talk about just value types.</p>
-<h2 id="What-is-a-value"><a href="#What-is-a-value" class="headerlink" title="What is a value?"></a>What is a value?</h2><p>A value is an instance of some data, like a number or text. In Swift, most of the commonly used value types are represented with <code>struct</code>, like <code>Int</code>, <code>Bool</code>, <code>String</code>, etc. But also another common way to represent a value type is <code>enum</code>. Here are some examples of values in Swift:</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="literal">true</span></div><div class="line"><span class="string">"Hello!"</span></div><div class="line">[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]</div></pre></td></tr></table></figure>
-<p>But what do we do with just values? We need to be able to identify them so we can move them around.</p>
-<h2 id="Introducing-Variables"><a href="#Introducing-Variables" class="headerlink" title="Introducing Variables"></a>Introducing Variables</h2><p>So again, what do we do with a value? We store it and run operations on it. How? Well, first we need to label it.</p>
-<p>A variable is just a label that helps you identify your value for later use.</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="string">"Hello world"</span></div></pre></td></tr></table></figure>
-<p>It’s important to understand, that When we run an operation that mutates our value, we don’t change the original, but instead, a new one gets created and replaces the old value. Knowing this will help you decide what kind of data type to use when coding.</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> b = [<span class="string">"Hello"</span>, <span class="string">"World"</span>]</div><div class="line">b.append(<span class="string">"!"</span>)</div><div class="line"><span class="comment">// b = ["Hello", "World", "!"]</span></div></pre></td></tr></table></figure>
-<h3 id="Constants"><a href="#Constants" class="headerlink" title="Constants"></a>Constants</h3><p>Constants are mostly like variables but, once they’re assigned with a value, they cannot be reassigned. In Swift, they are declared with the keyword <code>let</code>.</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> <span class="built_in">c</span> = <span class="number">1</span></div></pre></td></tr></table></figure>
-<p>Trying to assign <code>c = 2</code> will result in a compiler error</p>
-<h2 id="Passing-Values-Around"><a href="#Passing-Values-Around" class="headerlink" title="Passing Values Around"></a>Passing Values Around</h2><p>When working with value types, if we assign a variable to another, the value gets copied from one to the other. While the two variables may have the same value, changing one won’t affect the other.</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> d = b <span class="comment">// ["Hello", "World", "!"]</span></div><div class="line">d.append(<span class="string">"from Italy"</span>)</div><div class="line"><span class="comment">// ["Hello", "World", "!", "from Italy"]</span></div></pre></td></tr></table></figure>
-<p>Notice how <code>b</code> stays the same, while the value of <code>d</code> changed.</p>
-<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>This is all for now about value types in Swift. Hope you liked it and feel excited to go and play with what you’ve learned. On the next part, I’m going to talk about reference types.</p>
-<p>If you like what you just read or want me to continue writing about the Swift basics, please subscribe to receive on your email a monthly summary of the activity of the blog. Also, please share this content to keep me motivated. And if you have any questions or something to add, let me know on the comments section below.</p>
-<p>Bye 😉</p>
+            <p>The other day, I was chatting with some colleagues, who were interviewing people for a Swift Dev job opening. They said the killer question was, what’s the difference between a ‘struct’ and a ‘class’?. I was surprised. That’s something every swift developer should know. For that reason, I decided to write this post.</p>
+<h2 id="what-is-a-reference"><a href="#what-is-a-reference" class="headerlink" title="what is a reference?"></a>what is a reference?</h2><p>Imagine a reference as a link to a value. With a reference, we access the data. Instances of a class are called “objects”, and you cannot directly assign them to a variable, you reference it.</p>
+<p>The most common way to create a reference type in Swift is using a <code>class</code></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyClass</span> </span>&#123;</div><div class="line">    <span class="keyword">var</span> a = <span class="number">1</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>Unlike the value types, references do change their referenced value when the assigned variable is mutated.</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> myClassInstance = <span class="type">MyClass</span>()</div><div class="line"><span class="keyword">var</span> anotherInstance = myClassInstance</div><div class="line">anotherInstance.a = <span class="number">2</span></div><div class="line">myClassInstance.a</div></pre></td></tr></table></figure>
+<p> Even when a reference is assigned with <code>let</code>, we can still modify properties in the referenced object.</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> constantReference = <span class="type">MyClass</span>()</div><div class="line">constantReference.a <span class="comment">// = 1</span></div><div class="line">constantReference.a = <span class="number">3</span></div><div class="line">constantReference.a <span class="comment">// = 3</span></div></pre></td></tr></table></figure>
+<p> That means that the constant is the reference, not the object. With value types we wouldn’t be able to do this.</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">struct</span> <span class="title">MyStruct</span> </span>&#123;</div><div class="line">    <span class="keyword">var</span> b = <span class="number">5</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">let</span> myValue = <span class="type">MyStruct</span>()</div><div class="line">myValue.b = <span class="number">8</span> <span class="comment">// Error! 🤯</span></div></pre></td></tr></table></figure>
+<p>Trying to change the value of b in <code>myValue.b = 8</code> would result in a compiler error.</p>
+<p> Now let’s complicate things a little. Let’s create a value type that contains a reference type.</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">ReferenceType</span> </span>&#123;</div><div class="line">    <span class="keyword">var</span> aValueProperty = <span class="number">5</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">struct</span> <span class="title">ValueType</span> </span>&#123;</div><div class="line">    <span class="keyword">var</span> aReference = <span class="type">ReferenceType</span>()</div><div class="line">    <span class="keyword">var</span> aValue = <span class="string">"hello"</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// Create the value</span></div><div class="line"><span class="keyword">let</span> valueInstance = <span class="type">ValueType</span>()</div><div class="line"></div><div class="line"><span class="comment">// copy it</span></div><div class="line"><span class="keyword">var</span> anotherValueInstance = valueInstance</div><div class="line"><span class="comment">// change it's properties</span></div><div class="line">anotherValueInstance.aReference.aValueProperty = <span class="number">1000</span></div><div class="line">anotherValueInstance.aValue = <span class="string">"bye"</span></div><div class="line"></div><div class="line"><span class="comment">// Now lets check what changed in the original</span></div><div class="line">valueInstance.aReference.aValueProperty <span class="comment">// 1000</span></div><div class="line">valueInstance.aValue <span class="comment">// "hello"</span></div></pre></td></tr></table></figure>
+<p> Notice how <code>aValue</code> maintained it’s original value in <code>valueInstance</code>, whereas <code>aReference.aValueProperty</code> changed for both the original and the copied value, even when it was only modified in the copy.</p>
+<p> This behaviour is what we call a “shallow copy”, where we copy all the values but the referenced value stays the same. This is because we only copied the references. On the other hand, when we copy absolutely everything, including the referenced values, we call this a “deep copy”.</p>
+<p> This may be a little confusing, so take your time to understand it.</p>
+<h3 id="Equality-of-Reference-Types"><a href="#Equality-of-Reference-Types" class="headerlink" title="Equality of Reference Types"></a>Equality of Reference Types</h3><p> When we use the equals operator (<code>==</code>), we are checking if two values are the same.</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="number">1</span> == <span class="number">1</span> <span class="comment">// true</span></div><div class="line"></div><div class="line"><span class="keyword">let</span> x = <span class="number">400</span></div><div class="line"><span class="keyword">let</span> y = <span class="number">250</span></div><div class="line"></div><div class="line">x == y <span class="comment">// false</span></div></pre></td></tr></table></figure>
+<p> The same behaviour doesn’t occur when comparing custom value types.</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">struct</span> <span class="title">AnotherValueType</span> </span>&#123;</div><div class="line">    <span class="keyword">let</span> aValue = <span class="number">10</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">let</span> m = <span class="type">AnotherValueType</span>()</div><div class="line"><span class="keyword">let</span> n = m</div><div class="line"></div><div class="line">m == n <span class="comment">// Error: Binary operator '==' cannot be applied to two 'AnotherValueType' operands</span></div></pre></td></tr></table></figure>
+<p> This behaviour happened because <code>AnotherValueType</code> doesn’t implement the <code>Equatable</code> protocol, but that’s a topic for another time.</p>
+<p> The same happens for reference types. What we can do with reference types is check if they are the same with the <code>===</code> operator</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">AnotherClass</span> </span>&#123;</div><div class="line">    <span class="keyword">let</span> x = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">let</span> j = <span class="type">AnotherClass</span>()</div><div class="line"><span class="keyword">let</span> k = j</div><div class="line">j == k <span class="comment">// Error!</span></div><div class="line">j === k <span class="comment">// 👍</span></div></pre></td></tr></table></figure>
+<p>The <code>===</code> operator checks if two references point to the same value.</p>
+<h2 id="Functions"><a href="#Functions" class="headerlink" title="Functions"></a>Functions</h2><p>Surprise! Yes, functions are reference types.</p>
+<p>You can assign them to variables:</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> aFunction = &#123;</div><div class="line">    <span class="keyword">return</span> <span class="number">50</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>You can pass them as parameters:</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">func</span> <span class="title">anotherFunction</span><span class="params">(aFunctionAsParameter: <span class="params">()</span></span></span> -&gt; <span class="type">Int</span>) -&gt; <span class="type">Int</span> &#123;</div><div class="line">    <span class="keyword">return</span> aFunctionAsParameter()</div><div class="line">&#125;</div><div class="line"></div><div class="line">anotherFunction(aFunctionAsParameter: aFunction)</div></pre></td></tr></table></figure>
+<p>They are one of the most relevant features of Swift.</p>
+<p>These kinds of functions that receive another function as a parameter are called “higher order functions”. Some famous ones are: <code>map</code>, <code>reduce</code>, <code>filter</code>, among others.</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> grades = [<span class="number">10</span>,<span class="number">5</span>,<span class="number">3</span>,<span class="number">9</span>]</div><div class="line"></div><div class="line"><span class="comment">// lets see who passed:</span></div><div class="line"><span class="keyword">let</span> passed = grades.<span class="built_in">filter</span> &#123; (aGrade) -&gt; <span class="type">Bool</span> <span class="keyword">in</span></div><div class="line">    <span class="keyword">return</span> aGrade &gt;= <span class="number">5</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// passed = [10,5,9]</span></div></pre></td></tr></table></figure>
+<p> Functions can be declared inside other functions, like in a for-loop or inside many other scopes. But since functions are reference types when they are declared inside another scope and passed further, after the local scope ends, the local variables used inside the function aren’t destroyed.</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">func</span> <span class="title">outerFunction</span><span class="params">()</span></span> -&gt; () -&gt; <span class="type">String</span> &#123;</div><div class="line">    <span class="keyword">let</span> aVariable = <span class="string">"Hello from outer function"</span></div><div class="line">    <span class="keyword">let</span> innerFunction = &#123;</div><div class="line">        <span class="keyword">return</span> aVariable</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> innerFunction</div><div class="line">&#125;</div><div class="line">outerFunction()()</div></pre></td></tr></table></figure>
+<p> The functions that hold variables outside of their scope are usually called closures. But it doesn’t mean that other functions declared with <code>func</code> aren’t also closures.</p>
+<h2 id="Not-The-End"><a href="#Not-The-End" class="headerlink" title="Not The End"></a>Not The End</h2><p> Having a good understanding of how types work in Swift will help you decide when to use what, and more significantly, to better architect your apps.</p>
+<p> Please, let me know your thoughts and questions.</p>
 
         
         </div>
@@ -202,7 +217,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://swiftly.tips/2018/11/09/5-swift-tutorial-learn-data-structures/" data-id="cjod80y7d0001oy6idfh5f44x" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://swiftly.tips/2018/11/22/6-swift-tutorial-reference-types/" data-id="cjosb9pzb0008witdrj7do5gj" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -270,7 +285,157 @@ ga('send', 'pageview');
 
             
     
-        <a href="http://swiftly.tips/2018/11/09/5-swift-tutorial-learn-data-structures/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://swiftly.tips/2018/11/09/5-swift-tutorial-learn-data-structures/">Comments</a>
+        <a href="http://swiftly.tips/2018/11/22/6-swift-tutorial-reference-types/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://swiftly.tips/2018/11/22/6-swift-tutorial-reference-types/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-5-swift-tutorial-value-types" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2018/11/09/5-swift-tutorial-value-types/">Swift tutorial: Value types</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2018/11/09/5-swift-tutorial-value-types/">
+            <time datetime="2018-11-09T08:10:05.000Z" itemprop="datePublished">2018-11-09</time>
+        </a>
+    </div>
+
+
+                        
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/basics/">basics</a>, <a class="tag-link" href="/tags/tutorial/">tutorial</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p>I created this site to help people improve their code. And that’s still the mission today. Over the years, and especially in the recent months, I’ve seen so many young programmers get confused with some of the basic foundations of Swift. That’s why I decided to create this series of swift tutorials explaining the basics of the language.</p>
+<p>So, let’s get started!</p>
+<h2 id="What-is-Swift-and-why-Apple-created-it"><a href="#What-is-Swift-and-why-Apple-created-it" class="headerlink" title="What is Swift and why Apple created it?"></a>What is Swift and why Apple created it?</h2><p>Swift is a programming language created by Apple. It’s easy to learn, but in my opinion difficult to master, however, the easy part will do for most of what you’ll need. Swift is a strongly typed language and has a familiar syntax for developers that come from other famous languages.</p>
+<p>Swift was created, among other reasons, to make building apps for the Apple platform beginner friendly. Previously the scene was dominated by Objective-C. A powerful language with a syntax peculiar enough to confuse less experienced developers. Therefore, Apple came with this new pleasant-to-write language, not only attract young developers but also the very experienced ones.</p>
+<p>If you want to learn more about what is Swift, you can visit the <a href="https://docs.swift.org/swift-book" target="_blank" rel="external">official website</a>.</p>
+<h2 id="What-is-a-type"><a href="#What-is-a-type" class="headerlink" title="What is a type?"></a>What is a type?</h2><p>A type is an attribute we give to our data to tell the compiler how we intend to use it. In Swift, there are two kinds of data types: the “value” types and the “reference” types.</p>
+<p>To keep the right pace, in this article we are going to talk about just value types.</p>
+<h2 id="What-is-a-value"><a href="#What-is-a-value" class="headerlink" title="What is a value?"></a>What is a value?</h2><p>A value is an instance of some data, like a number or text. In Swift, most of the commonly used value types are represented with <code>struct</code>, like <code>Int</code>, <code>Bool</code>, <code>String</code>, etc. But also another common way to represent a value type is <code>enum</code>. Here are some examples of values in Swift:</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="literal">true</span></div><div class="line"><span class="string">"Hello!"</span></div><div class="line">[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]</div></pre></td></tr></table></figure>
+<p>But what do we do with just values? We need to be able to identify them so we can move them around.</p>
+<h2 id="Introducing-Variables"><a href="#Introducing-Variables" class="headerlink" title="Introducing Variables"></a>Introducing Variables</h2><p>So again, what do we do with a value? We store it and run operations on it. How? Well, first we need to label it.</p>
+<p>A variable is just a label that helps you identify your value for later use.</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="string">"Hello world"</span></div></pre></td></tr></table></figure>
+<p>It’s important to understand, that When we run an operation that mutates our value, we don’t change the original, but instead, a new one gets created and replaces the old value. Knowing this will help you decide what kind of data type to use when coding.</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> b = [<span class="string">"Hello"</span>, <span class="string">"World"</span>]</div><div class="line">b.append(<span class="string">"!"</span>)</div><div class="line"><span class="comment">// b = ["Hello", "World", "!"]</span></div></pre></td></tr></table></figure>
+<h3 id="Constants"><a href="#Constants" class="headerlink" title="Constants"></a>Constants</h3><p>Constants are mostly like variables but, once they’re assigned with a value, they cannot be reassigned. In Swift, they are declared with the keyword <code>let</code>.</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> <span class="built_in">c</span> = <span class="number">1</span></div></pre></td></tr></table></figure>
+<p>Trying to assign <code>c = 2</code> will result in a compiler error</p>
+<h2 id="Passing-Values-Around"><a href="#Passing-Values-Around" class="headerlink" title="Passing Values Around"></a>Passing Values Around</h2><p>When working with value types, if we assign a variable to another, the value gets copied from one to the other. While the two variables may have the same value, changing one won’t affect the other.</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> d = b <span class="comment">// ["Hello", "World", "!"]</span></div><div class="line">d.append(<span class="string">"from Italy"</span>)</div><div class="line"><span class="comment">// ["Hello", "World", "!", "from Italy"]</span></div></pre></td></tr></table></figure>
+<p>Notice how <code>b</code> stays the same, while the value of <code>d</code> changed.</p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>This is all for now about value types in Swift. Hope you liked it and feel excited to go and play with what you’ve learned. On the next part, I’m going to talk about reference types.</p>
+<p>If you like what you just read or want me to continue writing about the Swift basics, please subscribe to receive on your email a monthly summary of the activity of the blog. Also, please share this content to keep me motivated. And if you have any questions or something to add, let me know on the comments section below.</p>
+<p>Bye 😉</p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://swiftly.tips/2018/11/09/5-swift-tutorial-value-types/" data-id="cjosbc3cz0000zftdilfwm302" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://swiftly.tips/2018/11/09/5-swift-tutorial-value-types/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://swiftly.tips/2018/11/09/5-swift-tutorial-value-types/">Comments</a>
     
 
         </footer>
@@ -288,7 +453,7 @@ ga('send', 'pageview');
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2018/04/24/4-using-variadic-parameters/">Nº 4 - Using variadic parameters</a>
+            <a class="article-title" href="/2018/04/24/4-using-variadic-parameters/">Swift Tip - Using variadic parameters</a>
         </h1>
     
 
@@ -332,7 +497,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://swiftly.tips/2018/04/24/4-using-variadic-parameters/" data-id="cjod80y7j0005oy6ib0i56cyh" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://swiftly.tips/2018/04/24/4-using-variadic-parameters/" data-id="cjosb9pza0005witdlx0l4duz" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -418,7 +583,7 @@ ga('send', 'pageview');
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2018/04/24/3-print-multiple-things/">Nº 3 - Printing multiple variables at once?</a>
+            <a class="article-title" href="/2018/04/24/3-print-multiple-things/">Swift Tip - Printing multiple variables at once?</a>
         </h1>
     
 
@@ -463,7 +628,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://swiftly.tips/2018/04/24/3-print-multiple-things/" data-id="cjod80y7h0003oy6i8cycag61" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://swiftly.tips/2018/04/24/3-print-multiple-things/" data-id="cjosb9pz90004witdxlzbp81g" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -549,7 +714,7 @@ ga('send', 'pageview');
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2017/12/07/2-Ditch-the-semicolon/">Nº 2 - Ditch the semicolon</a>
+            <a class="article-title" href="/2017/12/07/2-Ditch-the-semicolon/">Swift Tip - Ditch the semicolon</a>
         </h1>
     
 
@@ -596,7 +761,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://swiftly.tips/2017/12/07/2-Ditch-the-semicolon/" data-id="cjod80y7a0000oy6iszp5ugi0" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://swiftly.tips/2017/12/07/2-Ditch-the-semicolon/" data-id="cjosb9pz80003witd1ffbk8q6" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -682,7 +847,7 @@ ga('send', 'pageview');
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2017/11/30/1-closure-retain-cycle/">Nº 1 - Closure retain cycle</a>
+            <a class="article-title" href="/2017/11/30/1-closure-retain-cycle/">Swift Tip - Closure retain cycle</a>
         </h1>
     
 
@@ -727,7 +892,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://swiftly.tips/2017/11/30/1-closure-retain-cycle/" data-id="cjod80y7i0004oy6ic36vuwlg" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://swiftly.tips/2017/11/30/1-closure-retain-cycle/" data-id="cjosb9pz10000witdf3njwxc3" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -818,7 +983,16 @@ ga('send', 'pageview');
                         
                         <div class="item-inner">
                             <p class="item-category"></p>
-                            <p class="item-title"><a href="/2018/11/09/5-swift-tutorial-learn-data-structures/" class="title">Swift tutorial: Value types</a></p>
+                            <p class="item-title"><a href="/2018/11/22/6-swift-tutorial-reference-types/" class="title">Swift tutorial: Value types</a></p>
+                            <p class="item-date"><time datetime="2018-11-22T07:53:43.000Z" itemprop="datePublished">2018-11-22</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/11/09/5-swift-tutorial-value-types/" class="title">Swift tutorial: Value types</a></p>
                             <p class="item-date"><time datetime="2018-11-09T08:10:05.000Z" itemprop="datePublished">2018-11-09</time></p>
                         </div>
                     </li>
@@ -827,7 +1001,7 @@ ga('send', 'pageview');
                         
                         <div class="item-inner">
                             <p class="item-category"></p>
-                            <p class="item-title"><a href="/2018/04/24/4-using-variadic-parameters/" class="title">Nº 4 - Using variadic parameters</a></p>
+                            <p class="item-title"><a href="/2018/04/24/4-using-variadic-parameters/" class="title">Swift Tip - Using variadic parameters</a></p>
                             <p class="item-date"><time datetime="2018-04-24T09:28:13.000Z" itemprop="datePublished">2018-04-24</time></p>
                         </div>
                     </li>
@@ -836,7 +1010,7 @@ ga('send', 'pageview');
                         
                         <div class="item-inner">
                             <p class="item-category"></p>
-                            <p class="item-title"><a href="/2018/04/24/3-print-multiple-things/" class="title">Nº 3 - Printing multiple variables at once?</a></p>
+                            <p class="item-title"><a href="/2018/04/24/3-print-multiple-things/" class="title">Swift Tip - Printing multiple variables at once?</a></p>
                             <p class="item-date"><time datetime="2018-04-24T09:15:33.000Z" itemprop="datePublished">2018-04-24</time></p>
                         </div>
                     </li>
@@ -845,17 +1019,8 @@ ga('send', 'pageview');
                         
                         <div class="item-inner">
                             <p class="item-category"></p>
-                            <p class="item-title"><a href="/2017/12/07/2-Ditch-the-semicolon/" class="title">Nº 2 - Ditch the semicolon</a></p>
+                            <p class="item-title"><a href="/2017/12/07/2-Ditch-the-semicolon/" class="title">Swift Tip - Ditch the semicolon</a></p>
                             <p class="item-date"><time datetime="2017-12-06T23:44:52.000Z" itemprop="datePublished">2017-12-07</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2017/11/30/1-closure-retain-cycle/" class="title">Nº 1 - Closure retain cycle</a></p>
-                            <p class="item-date"><time datetime="2017-11-30T19:07:08.000Z" itemprop="datePublished">2017-11-30</time></p>
                         </div>
                     </li>
                 
